@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>MOD_WOLFRAMWIDGET_NAME</name>
+	<author>Simon Champion</author>
+	<creationDate>March 2016</creationDate>
+    <copyright>Copyright (C) 2016 Simon Champion.</copyright>
+    <license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>simon@simonchampion.net</authorEmail>
+	<version>1.0.0</version>
+	<description>MOD_WOLFRAMWIDGET_DESCRIPTION</description>
+	<files>
+		<filename module="mod_wolframwidget">mod_wolframwidget.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_wolframwidget.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_wolframwidget.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="widgetPreset" type="list" description="MOD_WOLFRAMWIDGET_PRESET_DESC" label="MOD_WOLFRAMWIDGET_PRESET_LABEL" default="random">
+                    <option value="">MOD_WOLFRAMWIDGET_PRESET_NONE</option>
+                    <option value="160c88652d47d0be60bfbfed25111412">MOD_WOLFRAMWIDGET_PRESET_WEATHER</option>
+                    <option value="c44e503833b64e9f27197a484f4257c0">MOD_WOLFRAMWIDGET_PRESET_DERIVATIVECALC</option>
+                    <option value="2f1e0f79bf8e30d846b3dc75b4a0f2cf">MOD_WOLFRAMWIDGET_PRESET_HUMANGROWTH</option>
+                    <option value="8ce6790cc6a94e65f17f908f462fae85">MOD_WOLFRAMWIDGET_PRESET_OBJECTINSKY</option>
+                    <option value="b740ee7ab670d0b0cb81f7a5b673ce37">MOD_WOLFRAMWIDGET_PRESET_MORTGAGECALC</option>
+                    <option value="b3da9e8c1aadf5f2618509baa0bfa44d">MOD_WOLFRAMWIDGET_PRESET_CURRENCYCONV</option>
+                    <option value="2e3a21a282b30943bd16f9c95b01b9cc">MOD_WOLFRAMWIDGET_PRESET_STOCKVALUE</option>
+                    <option value="f2c00e4e734e4c2f6ded8b48848459b9">MOD_WOLFRAMWIDGET_PRESET_POPULATION</option>
+                </field>
+                <field
+                    name="widgetID"
+                    type="text"
+                    label="MOD_WOLFRAMWIDGET_WIDGETID_LABEL"
+                    description="MOD_WOLFRAMWIDGET_WIDGETID_DESC"
+                    default="" />
+                <field name="theme" type="radio" description="MOD_WOLFRAMWIDGET_THEME_DESC" label="MOD_WOLFRAMWIDGET_THEME_LABEL" default="">
+                    <option value="">MOD_WOLFRAMWIDGET_THEME_DEFAULT</option>
+                    <option value="yellow">MOD_WOLFRAMWIDGET_THEME_YELLOW</option>
+                    <option value="orange">MOD_WOLFRAMWIDGET_THEME_ORANGE</option>
+                    <option value="pink">MOD_WOLFRAMWIDGET_THEME_PINK</option>
+                    <option value="red">MOD_WOLFRAMWIDGET_THEME_RED</option>
+                    <option value="purple">MOD_WOLFRAMWIDGET_THEME_PURPLE</option>
+                    <option value="blue">MOD_WOLFRAMWIDGET_THEME_BLUE</option>
+                    <option value="teal">MOD_WOLFRAMWIDGET_THEME_TEAL</option>
+                    <option value="green">MOD_WOLFRAMWIDGET_THEME_GREEN</option>
+                    <option value="gray">MOD_WOLFRAMWIDGET_THEME_GRAY</option>
+                    <option value="black">MOD_WOLFRAMWIDGET_THEME_BLACK</option>
+                </field>
+                <field name="outputType" type="radio" description="MOD_WOLFRAMWIDGET_OUTPUTTYPE_DESC" label="MOD_WOLFRAMWIDGET_OUTPUTTYPE_LABEL" default="">
+                    <option value="">MOD_WOLFRAMWIDGET_OUTPUTTYPE_DEFAULT</option>
+                    <option value="lightbox">MOD_WOLFRAMWIDGET_OUTPUTTYPE_LIGHTBOX</option>
+                    <option value="popup">MOD_WOLFRAMWIDGET_OUTPUTTYPE_POPUP</option>
+                    <option value="iframe">MOD_WOLFRAMWIDGET_OUTPUTTYPE_INLINE_PARAMSONLY</option>
+                    <option value="iframeOpen">MOD_WOLFRAMWIDGET_OUTPUTTYPE_INLINE_RESULTSONLY</option>
+                    <option value="iframeOpenExpand">MOD_WOLFRAMWIDGET_OUTPUTTYPE_INLINE_PARAMSANDRESULTS</option>
+                </field>
+                <field
+                    name="outputWidth"
+                    type="text"
+                    label="MOD_WOLFRAMWIDGET_OUTPUTWIDTH_LABEL"
+                    description="MOD_WOLFRAMWIDGET_OUTPUTWIDTH_DESC"
+                    default="" />
+                <field
+                    name="outputHeight"
+                    type="text"
+                    label="MOD_WOLFRAMWIDGET_OUTPUTHEIGHT_LABEL"
+                    description="MOD_WOLFRAMWIDGET_OUTPUTHEIGHT_DESC"
+                    default="" />
+            </fieldset>
+		</fields>
+	</config>
+</extension>
