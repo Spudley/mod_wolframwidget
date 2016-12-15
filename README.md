@@ -15,6 +15,8 @@ The module allows you to configure it with various options, allowing you to pick
 
 You can find out more about the Wolfram Alpha widgets on their Widgets site: http://www.wolframalpha.com/widgets.
 
+If you like this extension, please review it on the Joomla Extensions Directory: https://extensions.joomla.org/extensions/extension/living/education-a-culture/wolfram-widgets
+
 Dependencies
 ------------
 
